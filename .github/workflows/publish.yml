@@ -18,4 +18,4 @@ jobs:
       - uses: holepunchto/actions/dotnet-base@v1
       - uses: holepunchto/actions/publish-nuget@v1
         with:
-          user: holepunch
+          user: mafintosh
