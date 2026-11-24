@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/Holepunch.BareStowHost/Holepunch.BareStowHost.csproj" />
+  <Project Path="test/Holepunch.BareStowHost.Tests/Holepunch.BareStowHost.Tests.csproj" />
+</Solution>

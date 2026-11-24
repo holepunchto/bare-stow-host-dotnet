@@ -1,0 +1,21 @@
+name: Publish
+on:
+  push:
+    tags:
+      - v*
+permissions:
+  contents: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+    environment:
+      name: nuget
+    name: Publish
+    steps:
+      - uses: holepunchto/actions/dotnet-base@v1
+      - uses: holepunchto/actions/publish-nuget@v1
+        with:
+          user: holepunch
